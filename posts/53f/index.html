@@ -25,7 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-  <link rel="preload" href="/css/style.8401447f.css" as="style">
+  <link rel="preload" href="/css/style.ac2f3830.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -43,7 +43,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-06-11T07:18:04.000Z">
-<meta property="article:modified_time" content="2022-06-12T06:43:15.911Z">
+<meta property="article:modified_time" content="2022-06-12T07:07:52.168Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="编译原理">
 <meta name="twitter:card" content="summary">
@@ -136,7 +136,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 'normal';
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -1625,8 +1625,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.8401447f.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.8401447f.css"></noscript>
+  <link rel="stylesheet" href="/css/style.ac2f3830.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.ac2f3830.css"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1698,9 +1698,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.8401447f.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.ac2f3830.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655016207496),
+    lastupdate: new Date(1655017681383),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2531,7 +2531,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>使用的教材是高等教育出版社的《编译原理（第三版）》陈易云 张昱编著</p>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="第一章：绪论"><a href="#第一章：绪论" class="headerlink" title="第一章：绪论"></a>第一章：绪论</h2><h3 id="编译程序"><a href="#编译程序" class="headerlink" title="编译程序"></a>编译程序</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><ul>
+<div class="story post-story"><h2 id="第一章：绪论"><a href="#第一章：绪论" class="headerlink" title="第一章：绪论"></a><strong>第一章：绪论</strong></h2><h3 id="编译程序"><a href="#编译程序" class="headerlink" title="编译程序"></a><strong>编译程序</strong></h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a><strong>概念</strong></h4><ul>
 <li><p>翻译程序：完成从一种语言到另一种语言的保语义变换的软件</p>
 </li>
 <li><p>源语言：变换前的语言</p>
@@ -2543,7 +2543,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>解释程序：将源程序的语句翻译一句执行一句(每次执行都要翻译)<strong>，</strong>不会生成目标程序。</p>
 </li>
 </ul>
-<h4 id="画出编译程序的总体结构图，简述个部分的主要功能"><a href="#画出编译程序的总体结构图，简述个部分的主要功能" class="headerlink" title="画出编译程序的总体结构图，简述个部分的主要功能"></a>画出编译程序的总体结构图，简述个部分的主要功能</h4><img src="https://s2.loli.net/2022/06/11/rNlhf9b7ycw1LQW.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/rNlhf9b7ycw1LQW.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" style="zoom: 65%;" />
+<h4 id="画出编译程序的总体结构图，简述个部分的主要功能"><a href="#画出编译程序的总体结构图，简述个部分的主要功能" class="headerlink" title="画出编译程序的总体结构图，简述个部分的主要功能"></a><strong>画出编译程序的总体结构图，简述个部分的主要功能</strong></h4><img src="https://s2.loli.net/2022/06/11/rNlhf9b7ycw1LQW.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/rNlhf9b7ycw1LQW.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" style="zoom: 65%;" />
 
 
 
@@ -2558,9 +2558,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><strong>符号表管理</strong>程序：负责建立、填写和查找等一系列表格工作。</li>
 <li><strong>错误处理</strong>程序：处理和校正源程序中存在的词法、语法和语义错误。</li>
 </ul>
-</div><div class="story post-story"><h2 id="第二章：词法分析"><a href="#第二章：词法分析" class="headerlink" title="第二章：词法分析"></a>第二章：词法分析</h2><h3 id="有限自动机"><a href="#有限自动机" class="headerlink" title="有限自动机"></a>有限自动机</h3><h4 id="正规式构造NFA"><a href="#正规式构造NFA" class="headerlink" title="正规式构造NFA"></a>正规式构造NFA</h4><p><img src="https://s2.loli.net/2022/06/11/1nmTlrhPVgZoOfN.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/1nmTlrhPVgZoOfN.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="v2-898e5775bb068df21403c0baf7ee9035_r.png"></p>
-<h4 id="NFA到DFA的转化"><a href="#NFA到DFA的转化" class="headerlink" title="NFA到DFA的转化"></a>NFA到DFA的转化</h4><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lilongsy/article/details/82465395">https://blog.csdn.net/lilongsy/article/details/82465395</a></p>
-<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><ol>
+</div><div class="story post-story"><h2 id="第二章：词法分析"><a href="#第二章：词法分析" class="headerlink" title="第二章：词法分析"></a><strong>第二章：词法分析</strong></h2><h3 id="有限自动机"><a href="#有限自动机" class="headerlink" title="有限自动机"></a><strong>有限自动机</strong></h3><h4 id="正规式构造NFA"><a href="#正规式构造NFA" class="headerlink" title="正规式构造NFA"></a><strong>正规式构造NFA</strong></h4><p><img src="https://s2.loli.net/2022/06/11/1nmTlrhPVgZoOfN.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/1nmTlrhPVgZoOfN.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="v2-898e5775bb068df21403c0baf7ee9035_r.png"></p>
+<h4 id="NFA到DFA的转化"><a href="#NFA到DFA的转化" class="headerlink" title="NFA到DFA的转化"></a><strong>NFA到DFA的转化</strong></h4><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lilongsy/article/details/82465395">https://blog.csdn.net/lilongsy/article/details/82465395</a></p>
+<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a><strong>例题</strong></h4><ol>
 <li><p>构造正规式相应的DFA：1(0|1)*101<br>按照以下三步：<br>（1）由正规表达式构造转换系统（NFA）<br>（2）由转换系统（NFA）构造确定的有穷自动机DFA<br>（3）DFA的最小化</p>
 <p>(0|1)*可以化为</p>
 <img src="https://s2.loli.net/2022/06/11/u4OBctarz2MQ9Jn.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/u4OBctarz2MQ9Jn.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Snipaste_2022-06-11_21-16-19.png" style="zoom: 50%;" />
@@ -2569,20 +2569,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>DFA的最小化（化简）：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1J64y1k7nk?p=5">https://www.bilibili.com/video/BV1J64y1k7nk?p=5</a></p>
 </li>
 </ol>
-</div><div class="story post-story"><h2 id="第三章：语法分析"><a href="#第三章：语法分析" class="headerlink" title="第三章：语法分析"></a>第三章：语法分析</h2><h3 id="上下文无关文法"><a href="#上下文无关文法" class="headerlink" title="上下文无关文法"></a>上下文无关文法</h3><ul>
+</div><div class="story post-story"><h2 id="第三章：语法分析"><a href="#第三章：语法分析" class="headerlink" title="第三章：语法分析"></a><strong>第三章：语法分析</strong></h2><h3 id="上下文无关文法"><a href="#上下文无关文法" class="headerlink" title="上下文无关文法"></a><strong>上下文无关文法</strong></h3><ul>
 <li>若一个形式文法G &#x3D; (V, Σ, P, S) 的产生式规则都取如下的形式：A <code>-&gt;</code> <em>α</em>，则谓之。其中 A∈V ，<em>α</em>∈(V∪Σ)* 。上下文无关文法取名为“上下文无关”的原因就是因为字符 A 总可以被字符串 α 自由替换，而<strong>无需考虑字符 A 出现的上下文</strong>。</li>
 <li>上下文无关语法G包括四个部分：一组<strong>终结符号</strong>，一组<strong>非终结符号</strong>，一个<strong>开始符号</strong>，以及一组<strong>产生式</strong>。</li>
 </ul>
-<h4 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h4><ol>
+<h4 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a><strong>例题</strong></h4><ol>
 <li><p>考虑文法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">S -&gt; (L)|a</span><br><span class="line">L -&gt; L,S|S</span><br></pre></td></tr></table></figure>
 
 <p>(a) 建立句子(a,(a,a))和(a,((a,a),(a,a)))的分析树<br>(b) 为(a)的两个句子构造最左推导<br>(c) 为(a)的两个句子构造最右推导<br>(d) 这个文法产生的语言是什么</p>
-<img src="https://s2.loli.net/2022/06/11/xoY6f3gBA5IdlEC.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/xoY6f3gBA5IdlEC.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Snipaste_2022-06-11_14-46-35.png" style="zoom: 51%;" />
+<img src="https://s2.loli.net/2022/06/11/xoY6f3gBA5IdlEC.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/xoY6f3gBA5IdlEC.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Snipaste_2022-06-11_14-46-35.png" style="zoom: 49%;" />
 
-
-
-<img src="https://s2.loli.net/2022/06/11/alnqke4MOhQrRS8.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/alnqke4MOhQrRS8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Snipaste_2022-06-11_14-46-54.png" style="zoom: 48%;" />
+<img src="https://s2.loli.net/2022/06/11/alnqke4MOhQrRS8.png" class="lazyload" data-srcset="https://s2.loli.net/2022/06/11/alnqke4MOhQrRS8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Snipaste_2022-06-11_14-46-54.png" style="zoom: 45%;" />
 
 <p>描述的语言：括号匹配的串_串中的各项由“,”隔开，项可以是括号匹配的子串或a</p>
 </li>
@@ -2590,11 +2588,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">E = T|E+T </span><br><span class="line">T = F|T*F </span><br><span class="line">F = (E)|i </span><br></pre></td></tr></table></figure>
 
 <p>1）写出句型(T*F+i)的最左推导并画出语法树。</p>
+<p>2）写出上述句型的短语，直接短语和句柄</p>
+<p>短语有T*F+i, T*F, i，直接短语的为 T*F、i，句柄是T*F.</p>
 </li>
 </ol>
-<p>2）写出上述句型的短语，直接短语和句柄</p>
-<p>   短语有T*F+i, T*F, i，直接短语的为 T*F、i，句柄是T*F.</p>
-<h3 id="左递归"><a href="#左递归" class="headerlink" title="左递归"></a>左递归</h3><ul>
+<h3 id="左递归"><a href="#左递归" class="headerlink" title="左递归"></a><strong>左递归</strong></h3><ul>
 <li><p>在二元表达式的语法规则中，如果产生式的第一个元素是它自身，那么程序就会无限地递归下去，这种情况就叫做<strong>左递归</strong>。</p>
 </li>
 <li><p>存在递归产生式</p>
@@ -2603,7 +2601,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>消除直接左递归可以写为</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A → βA’</span><br><span class="line">A’ → αA’|ε</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="例题-2"><a href="#例题-2" class="headerlink" title="例题"></a>例题</h4><p>消除下面文法的左递归</p>
+<h4 id="例题-2"><a href="#例题-2" class="headerlink" title="例题"></a><strong>例题</strong></h4><p>消除下面文法的左递归</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1) E → E+T|T</span><br><span class="line">2) T → T*F|F</span><br><span class="line">3) F → (E)|id</span><br></pre></td></tr></table></figure>
 
 <p>结果</p>
@@ -2611,7 +2609,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-<h3 id="自上而下分析"><a href="#自上而下分析" class="headerlink" title="自上而下分析"></a>自上而下分析</h3><h4 id="LL-1"><a href="#LL-1" class="headerlink" title="LL(1)"></a>LL(1)</h4><h3 id="自上而下分析-1"><a href="#自上而下分析-1" class="headerlink" title="自上而下分析"></a>自上而下分析</h3>
+<h3 id="自上而下分析"><a href="#自上而下分析" class="headerlink" title="自上而下分析"></a><strong>自上而下分析</strong></h3><h4 id="LL-1"><a href="#LL-1" class="headerlink" title="LL(1)"></a><strong>LL(1)</strong></h4><h3 id="自上而下分析-1"><a href="#自上而下分析-1" class="headerlink" title="自上而下分析"></a><strong>自上而下分析</strong></h3>
 </div>
   </div>
   
@@ -2647,7 +2645,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T14:43:15+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T15:07:52+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Jun 12, 2022</p>
@@ -3926,7 +3924,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"vernon's blog","url":"https://froze2049.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://froze2049.github.io/","sameAs":["https://github.com/volantis-x"],"description":"vernon's blog."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://froze2049.github.io/","name":"vernon's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://froze2049.github.io/categories/计算机学科笔记/","name":"计算机学科笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://froze2049.github.io/posts/53f/","name":"编译原理期末笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"vernon's blog","url":"https://froze2049.github.io/","keywords":null,"description":"vernon's blog.","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://froze2049.github.io/","description":"vernon's blog."},"publisher":{"@type":"Organization","name":"vernon's blog","url":"https://froze2049.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://froze2049.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"编译原理期末笔记","description":"使用的教材是高等教育出版社的《编译原理（第三版）》陈易云 张昱编著","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://froze2049.github.io/posts/53f/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://froze2049.github.io/"},"publisher":{"@type":"Organization","name":"vernon's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://froze2049.github.io/posts/53f/","wordCount":33,"datePublished":"2022-06-11T07:18:04.000Z","dateModified":"2022-06-12T06:43:15.911Z","articleSection":"计算机学科笔记","keywords":"编译原理","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"vernon's blog","url":"https://froze2049.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://froze2049.github.io/","sameAs":["https://github.com/volantis-x"],"description":"vernon's blog."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://froze2049.github.io/","name":"vernon's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://froze2049.github.io/categories/计算机学科笔记/","name":"计算机学科笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://froze2049.github.io/posts/53f/","name":"编译原理期末笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"vernon's blog","url":"https://froze2049.github.io/","keywords":null,"description":"vernon's blog.","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://froze2049.github.io/","description":"vernon's blog."},"publisher":{"@type":"Organization","name":"vernon's blog","url":"https://froze2049.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://froze2049.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"编译原理期末笔记","description":"使用的教材是高等教育出版社的《编译原理（第三版）》陈易云 张昱编著","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://froze2049.github.io/posts/53f/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://froze2049.github.io/"},"publisher":{"@type":"Organization","name":"vernon's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://froze2049.github.io/posts/53f/","wordCount":33,"datePublished":"2022-06-11T07:18:04.000Z","dateModified":"2022-06-12T07:07:52.168Z","articleSection":"计算机学科笔记","keywords":"编译原理","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
